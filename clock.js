@@ -23,5 +23,6 @@ function setClockFace() {
   digitalClockFace.innerHTML =time;
 }
 
+
 // 1000 milliseconds is one second
 setInterval(setClockFace, 1000);
