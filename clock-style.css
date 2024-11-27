@@ -1,0 +1,81 @@
+html {
+    background: white url('Back Ground.jpg');
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1),
+                inset 0 0 0 3px white,
+                inset 0 0 10px black,
+                0 0 10px black;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate(-3px);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.button {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.hour-hand {
+    width: 30%;
+    right: 50%;
+}
+
+.second-hand {
+    background: white;
+}
+
+.digital-clock {
+    font-family: digital-font;
+    font-size: 12rem;
+    color: white;
+    width: 400px;
+}
+
+.time {
+    padding-right: 20px;
+    text-shadow: 2px 2px 4px black;
+}
